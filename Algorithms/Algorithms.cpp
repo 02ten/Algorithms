@@ -25,10 +25,10 @@ void Erotosphen(int n) {
 	}
 	for (i = 0; i < n; i++) {
 		if (a[i] != 0) {
-			cout << a[i] << ' ';
+			cout << a[i] << " ";
 		}
-		
 	}
+	cout << '\n';
 }	
 int Euclid(int a , int b){
 	while (a != 0 && b != 0) {
@@ -39,15 +39,16 @@ int Euclid(int a , int b){
 			b = b % a;
 		}
 	}
-	cout << a + b;
-	return 0;
+	return a + b;
+	
 }
 int main()
 {
 	
-	int n, b;
+	int n, b,a;
 	cin >> n;
 	Erotosphen(n);
-	
+	cin >> a >> b;
+	cout << Euclid(a,b);
 }
 
